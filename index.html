@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solo Studios</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 45px 20px;
+      background: linear-gradient(135deg, #171722, #0d0d12);
+    }
+
+    header h1 {
+      font-size: 45px;
+      margin: 0;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .store {
+      max-width: 1000px;
+      margin: auto;
+      padding: 35px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .product {
+      background: #17171d;
+      border: 1px solid #292932;
+      border-radius: 18px;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .emoji {
+      font-size: 55px;
+    }
+
+    .product h2 {
+      margin: 15px 0 10px;
+    }
+
+    .product p {
+      color: #aaa;
+      min-height: 45px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .free {
+      color: #4cff7a;
+    }
+
+    .subscribe {
+      color: #ff4b4b;
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background: white;
+      color: black;
+    }
+
+    button:hover {
+      background: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>⭐ Solo Studios</h1>
+    <p>Your place for gaming & friendship.</p>
+  </header>
+
+  <main class="store">
+
+    <div class="product">
+      <div class="emoji">🤝</div>
+      <h2>Free Friend Request</h2>
+      <p>I send you a friend request.</p>
+      <div class="price free">FREE</div>
+      <button onclick="alert('Friend request selected!')">
+        GET
+      </button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">⭐</div>
+      <h2>Trusted Friend</h2>
+      <p>Subscribe to Solo Studios on YouTube.</p>
+      <div class="price subscribe">SUBSCRIBE</div>
+      <button onclick="window.location.href='https://youtube.com/@bacon-roblos?si=2fVwKXUXHi7xP77C'">
+        SUBSCRIBE
+      </button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">🧑‍🤝‍🧑</div>
+      <h2>A Friend If You Don't Have One</h2>
+      <p>I can be your gaming friend.</p>
+      <div class="price free">FREE</div>
+      <button onclick="alert('Friend option selected!')">
+        GET
+      </button>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Solo Studios
+  </footer>
+
+</body>
+</html>
